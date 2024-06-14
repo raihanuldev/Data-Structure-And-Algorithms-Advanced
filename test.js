@@ -8,18 +8,24 @@ const user = {name: users[1],age: userAges[1], profession: professions[1] }
 
 
 // Practice some concepts
-
-function sum(a,b){
-    const sum = a+b
-    return sum;
+let  q = 3
+while (q===3) {
+    console.log("HIIIIIIIII");
 }
-console.log(sum(12,23));
 
-// es6
-const multiply = (a,b)=>{
-    return a*b
-}
-console.log(multiply(12,2));
+
+erlwer
+// function sum(a,b){
+//     const sum = a+b
+//     return sum;
+// }
+// console.log(sum(12,23));
+
+// // es6
+// const multiply = (a,b)=>{
+//     return a*b
+// }
+// console.log(multiply(12,2));
 
 // for (let i =0; i < users.length; i ++){
 //     // const element = users[i]
