@@ -6,15 +6,17 @@ function charCount(str) {
 
   for (let i = 0; i < str.length; i++) {
     let char = str[i].toLowerCase()
-    if(charList[char] >0){
-        charList[char]++
-    }
-    else{
-        charList[char] =1
+    if(char.match(/[a-z]/)){
+        if(charList[char] >0){
+            charList[char]++
+        }
+        else{
+            charList[char] =1
+        }
     }
     // console.log(charList[char]);
   }
   console.log(charList);
 }
 
-charCount("hello Everyone");
+charCount("hello Everyone !");
