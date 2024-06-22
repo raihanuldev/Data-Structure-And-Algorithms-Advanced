@@ -19,4 +19,4 @@ function charCount(str) {
   console.log(charList);
 }
 
-charCount("hello Everyone !");
+charCount("I love you Priyo Javascript. tumi ese jibon ta dhonno kore diso amr!");
