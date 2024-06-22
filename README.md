@@ -1,10 +1,5 @@
-# DSA-JS: Data Structure and Algorithms in JavaScript (Bangla)
+# DSA-JS: Data Structure and Algorithms in JavaScript 
 
-Welcome to **DSA-JS**, a complete Data Structure and Algorithms tutorial series in Bangla, using JavaScript as the programming language. This repository is a companion to the tutorial series, providing additional resources, notes, and code snippets for students following along.
-
-## What You'll Learn
-
-This playlist, designed by experts, covers everything from the basics to advanced topics, including:
 
 - **Advanced JavaScript Concepts**
 - **Big O Notation**
@@ -49,10 +44,6 @@ Stay tuned for more resources that will be added to further support your learnin
 - Interactive coding challenges
 - Practice problems
 - Additional reading materials
-
-## Get Started
-
-Ready to dive in? Check out the playlist and start your journey towards mastering Data Structures and Algorithms with JavaScript.
 
 ## Connect with the Community
 
