@@ -32,4 +32,5 @@ function same(arr1,arr2){
 
 console.log(same([2,3,6],[9,4,36]));   //should be return of true
 
-//total complexity => n+n+n => 3n 
+//total complexity => n+n+n => 3n  
+// time complexity => OfN
