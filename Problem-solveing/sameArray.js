@@ -17,5 +17,6 @@ function same(arr1,arr2){
     return true
 
 }
-
+// n*n => n2 time complexity
+// that's huge .
 console.log(same([2,3,6],[9,4,36]));   //should be return of true
