@@ -15,10 +15,10 @@ function findNums(rolls,targetRoll){
         if(rolls[middle] === targetRoll) return middle;
         //2nd step find
         if(targetRoll > rolls[middle]){
-            start = start +1
+            start = middle +1
         }
         else{
-            end = end-1
+            end = middle-1
         }
     }
     return -1;

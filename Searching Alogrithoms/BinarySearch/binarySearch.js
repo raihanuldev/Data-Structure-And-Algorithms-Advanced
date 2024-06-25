@@ -11,9 +11,9 @@ function binarySearch(arr, value) {
     }
 
     if (value > arr[middle]) {
-      start = middle + 1; // Adjust the start index
+      start = middle + 1; 
     } else {
-      end = middle - 1; // Adjust the end index
+      end = middle - 1; 
     }
   }
 
