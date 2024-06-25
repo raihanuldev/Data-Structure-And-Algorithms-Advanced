@@ -15,10 +15,10 @@ function findNums(rolls,targetRoll){
         if(rolls[middle] === targetRoll) return middle;
         //2nd step find
         if(targetRoll > rolls[middle]){
-            start = middle +1
+            start = middle +1   // jodi bodo hoi taile middle er arekpasher ghula palai dibo, start = middle er shate 1 jog kore dibo baaas. khotom
         }
         else{
-            end = middle-1
+            end = middle-1 //same ulta ta korbo mr Binary kaka
         }
     }
     return -1;
