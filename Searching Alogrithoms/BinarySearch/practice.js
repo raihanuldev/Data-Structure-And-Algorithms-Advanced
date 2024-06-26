@@ -9,10 +9,10 @@ function binarySearch(arr,value){
         if(arr[middle] === value) return middle;
 
         if(value > arr[middle]){
-            start = start+1
+            start = middle+1
         } 
         else {
-            end = end -1
+            end = middle -1
         }
     }
     return -1
