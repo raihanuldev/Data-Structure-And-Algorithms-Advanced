@@ -1,18 +1,10 @@
-// give any date that will return Full Formate of date
-// input example: day,month,year
-// return "friday"
-// let's start
-
-function daysOfTheWeek (day,month,year){
-    // declere date from Date()
-    let date = new Date(year,month-1,day)
-    // get day of the week as a number 0-6
-    let dayOfWeek = date.getDay()
-    // now map on this day 
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    
-    return(days[dayOfWeek]);
+function twoSum(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+        if(nums[i]+nums[j] === target) return [i,j]
+    }
+  }
+  return false;
 }
 
-// daysOfTheWeek(31,8,2019)
-console.log(daysOfTheWeek(31,8,2019));
+console.log(twoSum([2, 3, 4, 5], 6));
