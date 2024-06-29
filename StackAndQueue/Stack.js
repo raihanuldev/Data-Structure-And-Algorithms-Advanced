@@ -13,13 +13,16 @@ class Stack{
         this.arr.pop();
         return this.arr;
     }
+    lookUp(){
+        return this.arr[this.arr.length -1]
+    }
 
 }
 
 let stack = new Stack()
 
-console.log(stack.arr);
 console.log(stack.push(12));
 console.log(stack.push(16));
 console.log(stack.push(18));
+console.log(stack.lookUp());
 console.log(stack.pop());
