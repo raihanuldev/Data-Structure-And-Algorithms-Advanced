@@ -32,3 +32,4 @@ list.push(110)
 console.log( list);
 list.push(120)
 console.log(list);
+list.push(122)
