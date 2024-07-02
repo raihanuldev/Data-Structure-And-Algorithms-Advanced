@@ -51,11 +51,33 @@ class SinglyLinkedList{
         this.length--
         return lastNode;
     }
+    // shift
+    shift(){
+        if(!this.head){
+            return null;
+        }
+        if(this.length === 1){
+            this.head = null;
+            this.tail = null
+            this.length =0
+        }
+        let currentNode = this.head;
+        let newCurrentNode;
+        if(currentNode){
+            this.head  = currentNode.next;
+            this.length --
+            newCurrentNode = currentNode
+        }
+
+
+    }
 }
 let list = new SinglyLinkedList();
 
 list.push(5)
 list.push(10)
 list.push(15)
-list.pop()
+// list.pop()
+list.shift()
+list.shift()
 console.log(list);
