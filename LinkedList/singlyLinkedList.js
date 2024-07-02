@@ -81,6 +81,17 @@ class SinglyLinkedList{
 
 
     }
+    // showAll
+    showList(){
+        let arr = [];
+        let currentNode = this.head;
+
+        while(currentNode){
+            arr.push(currentNode.value)
+            currentNode =  currentNode.next;
+        }
+        return arr;
+    }
 }
 let list = new SinglyLinkedList();
 
@@ -92,4 +103,5 @@ list.push(15)
 // list.shift()
 list.unshift(1)
 list.unshift(3)
+console.log(list.showList());
 console.log(list);
