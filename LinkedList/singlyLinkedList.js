@@ -25,6 +25,16 @@ class SinglyLinkedList{
         }
         this.length++
      }
+    //  unshift
+    unshift(value){
+        let newNode = {
+            value:value,
+            next: this.head
+        }
+        this.head = newNode;
+        this.length++
+        return newNode
+    }
     // Pop
     pop(){
         if(!this.head){
@@ -78,6 +88,8 @@ list.push(5)
 list.push(10)
 list.push(15)
 // list.pop()
-list.shift()
-list.shift()
+// list.shift()
+// list.shift()
+list.unshift(1)
+list.unshift(3)
 console.log(list);
