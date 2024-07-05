@@ -69,6 +69,17 @@ class DoublelyLinkList{
         }
         this.length ++;
     }
+    // showAll
+    showAll(){
+        let arr = [];
+        let currentNode = this.head;
+
+        while(currentNode){
+            arr.push(currentNode.value);
+            currentNode = currentNode.next
+        }
+        return arr;
+    }
 }
 let list = new DoublelyLinkList()
 // list.push(10)
@@ -80,4 +91,5 @@ let list = new DoublelyLinkList()
 list.unshift(12)
 list.unshift(13)
 list.unshift(15)
+console.log(list.showAll());
 console.log(list);
