@@ -14,7 +14,7 @@ class DoublelyLinkList{
     }
     // push
     push(value){
-        let newNode = new Node(value);
+        let newNode = new Node(value); 
 
         if(!this.head){
             this.head = newNode;
