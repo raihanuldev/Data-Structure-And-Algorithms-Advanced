@@ -15,6 +15,8 @@ class BookStack {
             this.top = book;
             this.bottom = book;
             this.length++
+        }else{
+            
         }
     }
 }
