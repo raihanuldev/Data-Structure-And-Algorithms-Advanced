@@ -56,12 +56,28 @@ class DoublelyLinkList{
         }
         this.length--;
     }
+    // unshift
+    unshift(value){
+        let newNode = new Node(value)
+        if(!this.head){
+            this.head = newNode;
+            this.tail = newNode;
+        }else{
+            newNode.next =this.head;
+            this.head.prev = newNode;
+            this.head = newNode
+        }
+        this.length ++;
+    }
 }
 let list = new DoublelyLinkList()
-list.push(10)
-list.push(11)
-list.push(12)
-list.push(13)
-// list.pop()
-list.shift()
+// list.push(10)
+// list.push(11)
+// list.push(12)
+// list.push(13)
+// // list.pop()
+// list.shift()
+list.unshift(12)
+list.unshift(13)
+list.unshift(15)
 console.log(list);
