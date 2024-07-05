@@ -41,11 +41,27 @@ class DoublelyLinkList{
         }
         this.length--;
     }
+    shift(){
+        if(!this.head){
+            return null;
+        }
+        let oldHead = this.head;
+        if(this.length == 1){
+            this.head = null;
+            this.tail = null;
+        }else{
+            this.head = oldHead.next;
+            oldHead.next = null;
+            this.head.prev = null
+        }
+        this.length--;
+    }
 }
 let list = new DoublelyLinkList()
 list.push(10)
 list.push(11)
 list.push(12)
 list.push(13)
-list.pop()
+// list.pop()
+list.shift()
 console.log(list);
