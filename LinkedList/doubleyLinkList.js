@@ -26,9 +26,26 @@ class DoublelyLinkList{
         }
         this.length++;
     }
+    // pop
+    pop(){
+        if(!this.head) return null;
+        let popedNode = this.tail;
+
+        if(this.length == 1){
+            this.head = null;
+            this.tail = null;
+        }else{
+            this.tail = popedNode.prev;
+            this.tail.next = null;
+            popedNode.prev =null
+        }
+        this.length--;
+    }
 }
 let list = new DoublelyLinkList()
 list.push(10)
+list.push(11)
 list.push(12)
 list.push(13)
+list.pop()
 console.log(list);
