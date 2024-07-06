@@ -22,9 +22,17 @@ class BookStack {
     
     this.length++;
   }
+  pop(){
+    if(!this.top){
+      return null;
+    }
+    this.top = this.top.next;
+    this.length--;
+  }
 }
 let bookStacks = new BookStack();
 bookStacks.push("Book-1");
 bookStacks.push("Book-2");
 bookStacks.push("Book-3");
+bookStacks.pop()
 console.log(bookStacks);
